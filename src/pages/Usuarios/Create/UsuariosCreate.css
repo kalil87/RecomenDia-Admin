@@ -1,0 +1,20 @@
+
+
+.usuarios-create-form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.button-create-user {
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background-color: antiquewhite;
+  cursor: pointer;
+}
+
+.button-create-user:hover {
+  box-shadow: 0 0 5px #719ECE;
+}

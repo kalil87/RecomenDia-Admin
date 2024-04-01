@@ -1,0 +1,50 @@
+
+
+
+
+.home-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  overflow: hidden; 
+}
+
+.home-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.content-wrapper {
+  width: 100%; /* Asegura que content-wrapper no exceda el ancho de home-main */
+  height: 100%;
+  padding: 20px;
+  overflow: auto; /* Añade un scroll si es necesario dentro de content-wrapper */
+}
+
+.sidebar-mobile {
+  width: 240px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -240px;
+  background-color: antiquewhite;
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+  transition: left 0.3s ease-in-out;
+  z-index: 2;
+}
+
+.sidebar-mobile.open {
+  left: 0;
+}
+
+.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro con opacidad */
+  z-index: 1;
+}
